@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!--========================HEADER============================-->
+    <header class="header">
+
+        <div class="menu container">
+            
+            <a href="#" class="logo"> SafeSound </a>                            <!-- Nombre empresa-->
+              <input type= 'checkbox' id="menu" />                              <!-- Menu -->
+                <label for="menu">                                            
+                  <img src="menu.png" class="menu-icono" alt="menu">
+                 </label>                                                       <!-- Menu -->
+
+            <nav class="navbar">
+                <ul>                                                           <!-- Vinculos superiores -->
+                    <li><a href='#'> Inicio </a></li>
+                    <li><a href='#Productooos'> Productos </a></li>
+                    <li><a href='Formulario.html'> Contacto </a></li>
+                </ul>                                                          <!-- Vinculos superiores -->
+            </nav>
+
+            <!--- Creacion del carrito de compras-->
+            <div>
+                <ul>                                                   <!-- Lista no ordenada con elementos li-->
+                    <li class="submenu">                               <!-- Donde se muestra carrito de compras e incorporo un div-->
+                        <img src="car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">                  <!-- Creacion de un table donde se mostraran los productos -->
+                                <thead>
+                                    <tr>
+                                        <th> Imagen </th>               <!-- Los th indican que se va a mostrar en el table en este caso quiero imagen nombre y precio-->
+                                        <th> Nombre </th>
+                                        <th> Precio </th>
+                                        <th></th>                       <!-- Th que se trabaja en javascript-->
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>                 <!-- Tbody que se trabaja en javascript-->
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2"> Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+             </div>
+              <!--- Creacion del carrito de compras-->
+              </div>
+             <div class="header-content container">
+              <div class="header-txt">
+                 <span></span>
+                   <h1> Cascos</h1>                                            <!-- Titulo principal seguido de descripcion de pagina-->
+                    <p>
+                        ¡Bienvenidos a nuestra página web de auticulares! Aquí encontrarás un mundo de sonido excepcional esperándote. Nos enorgullece ofrecer una amplia selección de auriculares de alta calidad para satisfacer tus necesidades auditivas y tus gustos estéticos. Ya sea que busques una experiencia inmersiva con nuestros auriculares con cancelación de ruido, mayor comodidad con nuestros auriculares inalámbricos, o una calidad de audio superior con nuestros auriculares de alta fidelidad, tenemos la opción perfecta para ti
+                    </p>
+                  <a href="#Productooos" class="btn-1">Productos</a>
+             </div>
+
+             <div class="header-img">
+                  <img src="auriculares1.png" alt="">                           <!-- Imagen principal-->
+             </div>
+        </div>
+    </header>
+ <!--========================HEADER============================-->
+
+ <!--========================SECCIONES=========================-->
+ <section class="information container">
+<div id="Productooos"></div>           <!-- Este div con Id es unicamente para llegar a la seccion de productos desde los links iniciales -->
+    <div class="information-content">
+
+        <div class="information-1">
+            <img src="caja2.png" alt="#">    <!-- Imagen Con descripcion alt-->
+            <h3> Envios a domicilio</h3>     <!-- Texto H3 descriptivo-->
+            <P>
+                Entregas en menos de 72H     <!-- Texto p-->
+            </P>
+        </div>
+
+        <div class="information-1">
+            <img src="tarjeta3.png" alt="#">
+            <h3> Pagos con tarjeta</h3>
+            <P>
+                 Con total garantía y devolución
+            </P>
+        </div>
+
+        <div class="information-1">
+            <img src="candado2.png" alt="#">
+            <h3> Seguridad </h3>
+            <P>
+                Y protección de datos
+            </P>
+        </div>
+    
+ </section>
+  <!--========================SECCIONES=========================-->
+
+  <!--==========================MAIN===========================-->
+
+  <main class="products container" id="lista-1">   <!-- Contenedor donde se encuentran todos mis productos-->
+    <h2> Productos destacados </h2>
+
+    <div class="product-content">
+
+            <div class="product">
+                <img src="cascos3.avif" alt="cascos1">                                   <!-- Imagen de los cascos junto descripcion alt-->
+                <div class="prodcut-txt">
+                    <h3>Corsair HS55 Stero Blanco</h3>                                   <!-- Texto descriptivo recuerda que es H3 como el de la seccion superior pongo en los dos h3 para que sean iguales-->
+                    <p class="precio"> 65.00$</p>               
+                    <a href="#" class="agregar-carrito btn-2" data-id="1"> Agregar </a>  <!-- Link para agfregar a carrito -->
+                </div>
+            </div>
+             
+            <!-- Copio y pego cambiando unicamente la imagen-->
+
+            <div class="product">
+                <img src="cascos2.jpg" alt="cascos2">
+                <div class="prodcut-txt">
+                    <h3>Newskill Aton Pro</h3>
+                    <p class="precio"> 90.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2"> Agregar </a>
+                </div>
+            </div>
+
+            
+            <div class="product">
+                <img src="cascos4.avif" alt="cascos3">
+                <div class="prodcut-txt">
+                    <h3> Corsair Void RGB7</h3>
+                    <p class="precio"> 78.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3"> Agregar </a>
+                </div>
+            </div>
+
+
+            
+            <div class="product">
+                <img src="auriculares5.jpg" alt="cascos4">
+                <div class="prodcut-txt">
+                    <h3>Corsair h7</h3>
+                    <p class="precio"> 150.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4"> Agregar </a>
+                </div>
+            </div>
+
+
+            
+            <div class="product">
+                <img src="auriculares6.jpg" alt="cascos5">
+                <div class="prodcut-txt">
+                    <h3>Corsair f6</h3>
+                    <p class="precio"> 45.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5"> Agregar </a>
+                </div>
+            </div>
+
+
+            
+            <div class="product">
+                <img src="cascos5.png" alt="cascos6">
+                <div class="prodcut-txt">
+                    <h3>Logitech VSound</h3>
+                    <p class="precio"> 196.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6"> Agregar </a>
+                </div>
+            </div>
+
+            
+            <div class="product">
+                <img src="cascos10.jpg" alt="cascos7">
+                <div class="prodcut-txt">
+                    <h3>G pro x 2 lightspeed</h3>
+                    <p class="precio"> 210.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7"> Agregar </a>
+                </div>
+            </div>
+
+            
+            <div class="product">
+                <img src="cascos11.png" alt="cascos8">
+                <div class="prodcut-txt">
+                    <h3>Red Pro Light</h3>
+                    <p class="precio"> 92.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8"> Agregar </a>
+                </div>
+            </div>
+
+
+
+    </div>
+
+    </h2>
+
+  </main>
+    
+  <!--==========================MAIN===========================-->
+
+  <!--============SECCION DE PRODUCTO DESTACADO================-->
+  <section class=" content price">
+    <article class="contain">
+        <h2 class="title"> Producto más vendido</h2>
+           <img src="cascos5.png" alt="">
+                <div class="prodcut-txt">
+                    <h3>Logitech VSound</h3>
+                    <p class="precio"> 196.00$</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8"> Agregar </a>
+                </div>
+                
+    </article>
+  </section>
+ <!--============SECCION DE PRODUCTO DESTACADO================-->
+  <script src="code2.js"></script>
+</body>
+</html>
